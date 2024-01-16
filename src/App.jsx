@@ -2,6 +2,7 @@ import Button from "./Button";
 import Props from "./Props";
 import PropsChildren from "./PropsChildren";
 import AccordionMenu from "./AccordionMenu";
+import Conditional from "./Conditional";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Props />
       <PropsChildren />
       <AccordionMenu />
+      <Conditional />
     </div>
   );
 }
