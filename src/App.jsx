@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Props from "./Props";
 import PropsChildren from "./PropsChildren";
+import AccordionMenu from "./AccordionMenu";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Button />
       <Props />
       <PropsChildren />
+      <AccordionMenu />
     </div>
   );
 }
