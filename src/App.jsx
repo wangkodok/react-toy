@@ -3,6 +3,7 @@ import Props from "./Props";
 import PropsChildren from "./PropsChildren";
 import AccordionMenu from "./AccordionMenu";
 import Conditional from "./Conditional";
+import Map from "./Map";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <PropsChildren />
       <AccordionMenu />
       <Conditional />
+      <Map />
     </div>
   );
 }
