@@ -5,6 +5,7 @@ import AccordionMenu from "./AccordionMenu";
 import Conditional from "./Conditional";
 import Map from "./Map";
 import ComponentPropsChildren from "./ComponentPropsChildren";
+import ComponentTag from "./ComponentTag";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Conditional />
       <Map />
       <ComponentPropsChildren />
+      <ComponentTag />
     </div>
   );
 }
