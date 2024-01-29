@@ -6,6 +6,7 @@ import Conditional from "./Conditional";
 import Map from "./Map";
 import ComponentPropsChildren from "./ComponentPropsChildren";
 import ComponentTag from "./ComponentTag";
+import StateParent from "./StateParent";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Map />
       <ComponentPropsChildren />
       <ComponentTag />
+      <StateParent />
     </div>
   );
 }
