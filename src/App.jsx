@@ -7,6 +7,7 @@ import Map from "./Map";
 import ComponentPropsChildren from "./ComponentPropsChildren";
 import ComponentTag from "./ComponentTag";
 import StateParent from "./StateParent";
+import StateParentProps from "./StateParentProps";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <ComponentPropsChildren />
       <ComponentTag />
       <StateParent />
+      <StateParentProps />
     </div>
   );
 }
