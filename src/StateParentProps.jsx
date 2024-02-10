@@ -9,7 +9,9 @@ export default function StateParentProps() {
 
   // 금액 버튼
   function handleCountClick(numberIncrease) {
-    setCount(count + numberIncrease);
+    setCount(function (count) {
+      return count + numberIncrease;
+    });
   }
 
   // 숫자 콤마
