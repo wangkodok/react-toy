@@ -8,6 +8,7 @@ import ComponentPropsChildren from "./ComponentPropsChildren";
 import ComponentTag from "./ComponentTag";
 import StateParent from "./StateParent";
 import StateParentProps from "./StateParentProps";
+import StyledComponents from "./StyledComponents";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <ComponentTag />
       <StateParent />
       <StateParentProps />
+      <StyledComponents />
     </div>
   );
 }
