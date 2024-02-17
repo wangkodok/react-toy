@@ -21,7 +21,7 @@ export default function StateParentProps() {
 
   return (
     <section>
-      <h2># props, useState 부모 컴포넌트에서 상태 관리</h2>
+      <h1># props, useState 부모 컴포넌트에서 상태 관리</h1>
       <p>더하기 계산</p>
       <p>총 {decimalPoint(count)}원</p>
       {numberCounts.map((numberCountItem, key) => {

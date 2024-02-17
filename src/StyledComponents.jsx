@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import Button from "./StyledButton";
 import StyledSpanAndStrong from "./StyledSpanAndStrong";
 
-const Area = styled.div`
+const Area = styled.section`
   background-color: #d89f25;
 
   & p {
@@ -24,7 +24,7 @@ const Area = styled.div`
   }
 `;
 
-const ControlContainer = styled.h2`
+const ControlContainer = styled.h1`
   background-color: ${(props) => {
     return props.$bg ? "#eee" : "#21be29";
   }};
