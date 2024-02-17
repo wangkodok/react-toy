@@ -1,4 +1,4 @@
-// import "./index.css";
+// import "./TailwindCSS-index.css";
 
 export default function TailwindCSS() {
   let TailwindCSS = "text-left text-lime-600 bg-teal-300 hover:bg-sky-700";
