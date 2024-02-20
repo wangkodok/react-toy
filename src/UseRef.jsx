@@ -5,7 +5,9 @@ export default function UseRef() {
   const myName = useRef();
 
   function handleClick() {
+    // myName.current 사용하여 요소 가져오기
     setIsMyName(myName.current.value);
+    myName.current.value = "";
   }
 
   return (
@@ -20,7 +22,7 @@ export default function UseRef() {
         <input ref={myName} type="text" id="ref" />
         <button onClick={handleClick}>버튼</button>
       </form>
-      <p>{isMyName}</p>
+      <p>{isMyName ?? "이름을 작성하십시오."}</p>
     </section>
   );
 }
