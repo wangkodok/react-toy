@@ -10,6 +10,7 @@ import StateParent from "./StateParent";
 import StateParentProps from "./StateParentProps";
 import StyledComponents from "./StyledComponents";
 import TailwindCSS from "./TailwindCSS";
+import UseRef from "./UseRef";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <StateParentProps />
       <StyledComponents />
       <TailwindCSS />
+      <UseRef />
     </div>
   );
 }
