@@ -11,6 +11,7 @@ import StateParentProps from "./StateParentProps";
 import StyledComponents from "./StyledComponents";
 import TailwindCSS from "./TailwindCSS";
 import UseRef from "./UseRef";
+import Project from "./Project";
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
       <StyledComponents />
       <TailwindCSS />
       <UseRef />
+      <Project />
     </div>
   );
 }
