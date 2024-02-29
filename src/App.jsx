@@ -14,6 +14,7 @@ import UseRef from "./UseRef";
 import Project from "./Project";
 import UserInput from "./UserInput";
 import StateList from "./StateList";
+import ContextAPI from "./ContextAPI";
 
 export default function App() {
   return (
@@ -34,6 +35,7 @@ export default function App() {
       <Project />
       <UserInput />
       <StateList />
+      <ContextAPI />
     </div>
   );
 }
