@@ -15,6 +15,7 @@ import Project from "./Project";
 import UserInput from "./UserInput";
 import StateList from "./StateList";
 import ContextAPI from "./ContextAPI";
+import UseReducer from "./UseReducer";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
       <UserInput />
       <StateList />
       <ContextAPI />
+      <UseReducer />
     </div>
   );
 }
