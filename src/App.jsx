@@ -16,6 +16,7 @@ import UserInput from "./UserInput";
 import StateList from "./StateList";
 import ContextAPI from "./ContextAPI";
 import UseReducer from "./UseReducer";
+import UseReducerModal from "./UseReducerModal";
 
 export default function App() {
   return (
@@ -38,6 +39,7 @@ export default function App() {
       <StateList />
       <ContextAPI />
       <UseReducer />
+      <UseReducerModal />
     </div>
   );
 }
