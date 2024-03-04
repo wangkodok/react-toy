@@ -17,6 +17,7 @@ import StateList from "./StateList";
 import ContextAPI from "./ContextAPI";
 import UseReducer from "./UseReducer";
 import UseReducerModal from "./UseReducerModal";
+import UseEffectMount from "./UseEffectMount";
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
       <ContextAPI />
       <UseReducer />
       <UseReducerModal />
+      <UseEffectMount />
     </div>
   );
 }
