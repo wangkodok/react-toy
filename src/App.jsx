@@ -20,6 +20,7 @@ import UseReducerModal from "./UseReducerModal";
 import UseEffectMount from "./UseEffectMount";
 import UseEffectDependencyArray from "./UseEffectDependencyArray";
 import UseCallbackSetTimeout from "./UseCallbackSetTimeout";
+import UseCallbackParentComponent from "./UseCallbackParentComponent";
 
 export default function App() {
   return (
@@ -46,6 +47,7 @@ export default function App() {
       <UseEffectMount />
       <UseEffectDependencyArray />
       <UseCallbackSetTimeout />
+      <UseCallbackParentComponent />
     </div>
   );
 }
