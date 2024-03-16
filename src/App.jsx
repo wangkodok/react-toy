@@ -22,6 +22,7 @@ import UseEffectDependencyArray from "./UseEffectDependencyArray";
 import UseCallbackSetTimeout from "./UseCallbackSetTimeout";
 import UseCallbackParentComponent from "./UseCallbackParentComponent";
 import UseCallbackParentBox from "./UseCallbackChildBox/UseCallbackParentBox";
+import SetTimeOut from "./SetTimeOut";
 
 export default function App() {
   return (
@@ -50,6 +51,7 @@ export default function App() {
       <UseCallbackSetTimeout />
       <UseCallbackParentComponent />
       <UseCallbackParentBox />
+      <SetTimeOut />
     </div>
   );
 }
