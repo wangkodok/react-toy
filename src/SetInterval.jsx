@@ -1,13 +1,13 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function SetInterval() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
-  setInterval(() => {
-    setCount(count + 1);
-  }, 1000);
+  // setInterval(() => {
+  //   setCount(count + 1);
+  // }, 1000);
 
-  console.log(count);
+  // console.log(count);
 
   // setTimeout(() => {
   //   setCount((item) => {
@@ -20,7 +20,7 @@ export default function SetInterval() {
   return (
     <section>
       <h1># 셋인터벌</h1>
-      <p>{count}</p>
+      {/* <p>{count}</p> */}
     </section>
   );
 }
