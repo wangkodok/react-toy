@@ -23,6 +23,7 @@ import UseCallbackSetTimeout from "./UseCallbackSetTimeout";
 import UseCallbackParentComponent from "./UseCallbackParentComponent";
 import UseCallbackParentBox from "./UseCallbackChildBox/UseCallbackParentBox";
 import SetTimeOut from "./SetTimeOut";
+import SetInterval from "./SetInterval";
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
       <UseCallbackParentComponent />
       <UseCallbackParentBox />
       <SetTimeOut />
+      <SetInterval />
     </div>
   );
 }
