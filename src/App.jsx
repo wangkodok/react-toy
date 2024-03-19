@@ -25,6 +25,7 @@ import UseCallbackParentBox from "./UseCallbackChildBox/UseCallbackParentBox";
 import SetTimeOut from "./SetTimeOut";
 import SetInterval from "./SetInterval";
 import Redux from "./Redux";
+import ReduxToolkit from "./ReduxToolkit";
 
 export default function App() {
   return (
@@ -56,6 +57,7 @@ export default function App() {
       <SetTimeOut />
       <SetInterval />
       <Redux />
+      <ReduxToolkit />
     </div>
   );
 }
