@@ -5,6 +5,9 @@ export default function Redux() {
   const counter = useSelector((state) => {
     return state.counter;
   });
+  const show = useSelector((state) => {
+    return state.showCounter;
+  });
 
   const incrementHandler = () => {
     dispatch({ type: "increment" });
@@ -18,13 +21,21 @@ export default function Redux() {
     dispatch({ type: "decrement" });
   };
 
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
+
+  // console.log(show);
+
   return (
     <section>
       <h1># 리덕스</h1>
+      <button onClick={toggleCounterHandler}>show</button>
+      {show && <p>show popup</p>}
       <button onClick={decrementHandler}>-1</button>
       <button onClick={incrementHandler}>+1</button>
       <button onClick={increaseHandler}>+5</button>
-      <p>{counter}</p>
+      {show && <p>{counter}</p>}
     </section>
   );
 }
