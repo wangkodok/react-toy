@@ -26,6 +26,7 @@ import SetTimeOut from "./SetTimeOut";
 import SetInterval from "./SetInterval";
 import Redux from "./Redux";
 import ReduxToolkit from "./ReduxToolkit";
+import ReduxToolkitLoginLogout from "./ReduxToolkitLoginLogout";
 
 export default function App() {
   return (
@@ -58,6 +59,7 @@ export default function App() {
       <SetInterval />
       <Redux />
       <ReduxToolkit />
+      <ReduxToolkitLoginLogout />
     </div>
   );
 }
