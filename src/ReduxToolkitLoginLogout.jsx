@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "./reduxToolkitStore";
+import { authActions } from "./reduxToolkitStore/auth";
 
 export default function ReduxToolkitLoginLogout() {
   const dispatch = useDispatch();
