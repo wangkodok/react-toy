@@ -27,6 +27,7 @@ import SetInterval from "./SetInterval";
 import Redux from "./Redux";
 import ReduxToolkit from "./ReduxToolkit";
 import ReduxToolkitLoginLogout from "./ReduxToolkitLoginLogout";
+import RouterPage from "./RouterPage";
 
 export default function App() {
   return (
@@ -60,6 +61,7 @@ export default function App() {
       <Redux />
       <ReduxToolkit />
       <ReduxToolkitLoginLogout />
+      <RouterPage />
     </div>
   );
 }
