@@ -1,6 +1,12 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 export default function RouterPageNavigation() {
+  const navigate = useNavigate();
+
+  function navigateHandler() {
+    navigate("/products");
+  }
+
   return (
     <section>
       <h1># Outlet</h1>
@@ -30,6 +36,11 @@ export default function RouterPageNavigation() {
           </li>
         </ul>
       </nav>
+
+      {/* 폼 제출 후 버튼에 사용, 로그인 버튼에 사용 */}
+      <button onClick={navigateHandler}>
+        useNavigate 이용하여 페이지 이동
+      </button>
     </section>
   );
 }
