@@ -4,7 +4,7 @@ export default function RouterPageNavigation() {
   const navigate = useNavigate();
 
   function navigateHandler() {
-    navigate("/products");
+    navigate("products");
   }
 
   return (
@@ -13,14 +13,14 @@ export default function RouterPageNavigation() {
       <nav>
         <ul>
           <li>
-            <Link to="/">HomePage 이동</Link>
+            <Link to="">HomePage 이동</Link>
           </li>
           <li>
-            <Link to="/products">ProductsPage 이동</Link>
+            <Link to="products">ProductsPage 이동</Link>
           </li>
           <li>
             <NavLink
-              to="/company"
+              to="company"
               className={({ isActive }) => {
                 return isActive ? "a" : "b";
               }}

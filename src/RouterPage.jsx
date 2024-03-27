@@ -19,20 +19,20 @@ import RouterPageDetail from "./RouterPageDetail";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/root",
     element: <RouterPageRootLayout />,
     errorElement: <RouterPageError />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <HomePage />,
       },
       {
-        path: "/products",
+        path: "products",
         element: <ProductsPage />,
       },
       {
-        path: "/products/:productId",
+        path: "products/:productId",
         element: <RouterPageDetail />,
       },
     ],
