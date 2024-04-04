@@ -28,6 +28,7 @@ import Redux from "./Redux";
 import ReduxToolkit from "./ReduxToolkit";
 import ReduxToolkitLoginLogout from "./ReduxToolkitLoginLogout";
 import RouterPage from "./RouterPage";
+import InputHandle from "./InputHandling/InputHandle";
 
 export default function App() {
   return (
@@ -62,6 +63,7 @@ export default function App() {
       <ReduxToolkit />
       <ReduxToolkitLoginLogout />
       <RouterPage />
+      <InputHandle />
     </div>
   );
 }
