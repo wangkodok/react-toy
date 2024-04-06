@@ -24,12 +24,13 @@ import UseCallbackParentComponent from "./UseCallbackParentComponent";
 import UseCallbackParentBox from "./UseCallbackChildBox/UseCallbackParentBox";
 import SetTimeOut from "./SetTimeOut";
 import SetInterval from "./SetInterval";
-import Redux from "./Redux";
-import ReduxToolkit from "./ReduxToolkit";
-import ReduxToolkitLoginLogout from "./ReduxToolkitLoginLogout";
+// import Redux from "./Redux";
+// import ReduxToolkit from "./ReduxToolkit";
+// import ReduxToolkitLoginLogout from "./ReduxToolkitLoginLogout";
 import RouterPage from "./RouterPage";
 import InputHandle from "./InputHandling/InputHandle";
 import InputHandleList from "./InputHandling/InputHandleList";
+import ReduxStudy from "./reduxStoreStudy/ReduxStudy";
 
 export default function App() {
   return (
@@ -60,12 +61,13 @@ export default function App() {
       <UseCallbackParentBox />
       <SetTimeOut />
       <SetInterval />
-      <Redux />
-      <ReduxToolkit />
-      <ReduxToolkitLoginLogout />
+      {/* <Redux /> */}
+      {/* <ReduxToolkit /> */}
+      {/* <ReduxToolkitLoginLogout /> */}
       <RouterPage />
       <InputHandle />
       <InputHandleList />
+      <ReduxStudy />
     </div>
   );
 }
