@@ -1,3 +1,4 @@
+import MainPage from "./MainPage/MainRouter";
 import Button from "./Button";
 import Props from "./Props";
 import PropsChildren from "./PropsChildren";
@@ -35,6 +36,7 @@ import ReduxStudy from "./reduxStoreStudy/ReduxStudy";
 export default function App() {
   return (
     <div>
+      <MainPage />
       <Button />
       <Props />
       <PropsChildren />
