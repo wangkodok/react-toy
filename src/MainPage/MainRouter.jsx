@@ -7,7 +7,7 @@ import HomePage from "./HomePage";
 const router = createBrowserRouter([
   {
     // 상위 페이지
-    path: "/home",
+    path: "/",
     element: <RootPage />,
     errorElement: <ErrorPage />,
     // children는 하위 페이지
