@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import styled from "styled-components";
 
 // import search from "../image/search.svg";
@@ -75,19 +75,19 @@ export default function RootPage() {
         <h1></h1>
         <div className="sidebar">
           <div className="logo-area">
-            <a href="">CodeRepository&#40; &#41;&#59;</a>
+            <Link to="/">CodeRepository&#40; &#41;&#59;</Link>
           </div>
           <nav>
             <ul>
               <li>
-                <a href="">
+                <Link to="page">
                   <span>리액트</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="">
+                <Link to="">
                   <span>리액트</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -96,8 +96,8 @@ export default function RootPage() {
           <section>
             <h2>콘텐츠</h2>
             {/* 하위 페이지를 렌더링하려면 상위 페이지에서 Outlet 사용하기 */}
-            <Outlet></Outlet>
           </section>
+          <Outlet></Outlet>
         </div>
       </div>
     </Wrapper>
