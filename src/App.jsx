@@ -35,7 +35,7 @@ import MainPage from "./MainPage/MainRouter";
 
 export default function App() {
   return (
-    <div>
+    <>
       <MainPage />
       {/* <Button /> */}
       {/* <Props /> */}
@@ -70,6 +70,6 @@ export default function App() {
       {/* <InputHandle /> */}
       {/* <InputHandleList /> */}
       {/* <ReduxStudy /> */}
-    </div>
+    </>
   );
 }
