@@ -42,7 +42,7 @@ export default function HomePage() {
       <Conditional />
       <Map />
       <ComponentPropsChildren />
-      <ComponentTag />/
+      <ComponentTag />
       <StateParent />
       <StateParentProps />
       <StyledComponents />
