@@ -30,7 +30,8 @@ import SetInterval from "../SetInterval";
 // import RouterPage from "../RouterPage";
 import InputHandle from "../InputHandling/InputHandle";
 import InputHandleList from "../InputHandling/InputHandleList";
-import ReduxStudy from "../reduxStoreStudy/ReduxStudy";
+// import ReduxStudy from "../reduxStoreStudy/ReduxStudy";
+import ReduxStudyList from "../reduxStoreStudyList/ReduxStudyList";
 
 export default function HomePage() {
   return (
@@ -67,7 +68,8 @@ export default function HomePage() {
       {/* <RouterPage /> */}
       <InputHandle />
       <InputHandleList />
-      <ReduxStudy />
+      {/* <ReduxStudy /> */}
+      <ReduxStudyList />
     </>
   );
 }
