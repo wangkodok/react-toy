@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     // children는 하위 페이지
     children: [
       {
-        path: "page",
+        path: "react",
         element: <HomePage />,
       },
       {

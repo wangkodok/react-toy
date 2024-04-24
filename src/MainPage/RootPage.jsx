@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 // import search from "../image/search.svg";
 import react from "../image/react.png";
+import { useState } from "react";
 
 const Wrapper = styled.div`
   font-family: "Noto Sans KR", sans-serif;
@@ -43,6 +44,10 @@ const Wrapper = styled.div`
       font-size: 16px;
     }
 
+    nav > ul > li.on > a {
+      background-color: #ddd;
+    }
+
     nav > ul > li > a:hover {
       background-color: #ddd;
     }
@@ -53,6 +58,10 @@ const Wrapper = styled.div`
       background-image: url(${react});
       background-repeat: no-repeat;
       filter: grayscale(100%);
+    }
+
+    nav > ul > li.on > a > span {
+      filter: grayscale(0%);
     }
 
     nav > ul > li > a:hover > span {
@@ -69,6 +78,14 @@ const Wrapper = styled.div`
 `;
 
 export default function RootPage() {
+  const [sidebar, setSidebar] = useState("react");
+
+  function handlerSidebarClick(item) {
+    setSidebar(() => {
+      return item;
+    });
+  }
+
   return (
     <Wrapper>
       <div className="container">
@@ -79,13 +96,23 @@ export default function RootPage() {
           </div>
           <nav>
             <ul>
-              <li>
-                <Link to="page">
+              <li className={sidebar === "react" ? "on" : null}>
+                <Link
+                  to="react"
+                  onClick={() => {
+                    return handlerSidebarClick("react");
+                  }}
+                >
                   <span>리액트</span>
                 </Link>
               </li>
-              <li>
-                <Link to="">
+              <li className={sidebar === "redux" ? "on" : null}>
+                <Link
+                  to=""
+                  onClick={() => {
+                    return handlerSidebarClick("redux");
+                  }}
+                >
                   <span>리액트</span>
                 </Link>
               </li>
