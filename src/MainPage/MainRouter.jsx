@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         path: "test/:testId",
         element: <div>testId</div>,
       },
+      {
+        path: "test/:editId",
+        element: <div>testId</div>,
+      },
     ],
   },
   {
