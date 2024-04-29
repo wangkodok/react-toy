@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootPage from "./RootPage";
 import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
+import ReduxPageEdit from "../reduxPageEdit/ReduxPageEdit";
 
 const router = createBrowserRouter([
   {
@@ -17,15 +18,15 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
+        path: "react/:editId",
+        element: <ReduxPageEdit />,
+      },
+      {
         path: "test",
         element: <div>test</div>,
       },
       {
         path: "test/:testId",
-        element: <div>testId</div>,
-      },
-      {
-        path: "test/:editId",
         element: <div>testId</div>,
       },
     ],

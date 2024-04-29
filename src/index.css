@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 section {
   margin: 0 0 40px;
   padding: 20px 0;
