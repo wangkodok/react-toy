@@ -1,3 +1,9 @@
+import ToggleButton from "../useState/ToggleButton";
+
 export default function UseStatePage() {
-  return <div>UseStatePage</div>;
+  return (
+    <div>
+      <ToggleButton />
+    </div>
+  );
 }

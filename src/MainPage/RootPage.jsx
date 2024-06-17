@@ -133,7 +133,7 @@ export default function RootPage() {
         </div>
         <div className="content">
           <section>
-            <h2>콘텐츠</h2>
+            {/* <h2>콘텐츠</h2> */}
             {/* 하위 페이지를 렌더링하려면 상위 페이지에서 Outlet 사용하기 */}
           </section>
           <Outlet></Outlet>

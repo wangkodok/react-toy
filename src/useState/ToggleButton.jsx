@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Button() {
+export default function ToggleButton() {
   const [is, setIs] = useState(false);
 
   function handleClick() {
@@ -15,9 +15,10 @@ export default function Button() {
   }
 
   return (
-    <>
+    <section>
+      <h3>토글 버튼</h3>
       <ul>{Item}</ul>
       <button onClick={handleClick}>버튼</button>
-    </>
+    </section>
   );
 }
