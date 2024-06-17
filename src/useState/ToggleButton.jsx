@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title3 from "../components/Title3";
 
 export default function ToggleButton() {
   const [is, setIs] = useState(false);
@@ -16,9 +17,11 @@ export default function ToggleButton() {
 
   return (
     <section>
-      <h3>토글 버튼</h3>
+      <Title3>토글 버튼</Title3>
       <ul>{Item}</ul>
-      <button onClick={handleClick}>버튼</button>
+      <button className="bg-green-500 text-white p-2" onClick={handleClick}>
+        버튼
+      </button>
     </section>
   );
 }

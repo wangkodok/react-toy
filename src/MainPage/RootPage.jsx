@@ -133,7 +133,10 @@ export default function RootPage() {
         </div>
         <div className="content">
           <section>
-            {/* <h2>콘텐츠</h2> */}
+            {sidebar === "react" ? (
+              <h2>Tailwind CSS 활용하여 디자인 시스템 만들기</h2>
+            ) : null}
+
             {/* 하위 페이지를 렌더링하려면 상위 페이지에서 Outlet 사용하기 */}
           </section>
           <Outlet></Outlet>
