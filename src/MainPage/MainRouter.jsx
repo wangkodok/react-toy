@@ -4,6 +4,7 @@ import RootPage from "./RootPage";
 import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
 import ReduxPageEdit from "../reduxPageEdit/ReduxPageEdit";
+import UseStatePage from "../pages/UseStatePage";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "react/:editId",
         element: <ReduxPageEdit />,
+      },
+      {
+        path: "react/useState",
+        element: <UseStatePage />,
       },
       {
         path: "test",

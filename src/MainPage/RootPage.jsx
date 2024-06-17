@@ -67,6 +67,11 @@ const Wrapper = styled.div`
     nav > ul > li > a:hover > span {
       filter: grayscale(0%);
     }
+
+    .snb-react > li > a {
+      padding: 12px 68px;
+      font-size: 16px;
+    }
   }
 
   .content {
@@ -95,7 +100,7 @@ export default function RootPage() {
             <Link to="/">CodeRepository&#40; &#41;&#59;</Link>
           </div>
           <nav>
-            <ul>
+            <ul className="snb">
               <li className={sidebar === "react" ? "on" : null}>
                 <Link
                   to="react"
@@ -105,6 +110,13 @@ export default function RootPage() {
                 >
                   <span>리액트</span>
                 </Link>
+                {sidebar === "react" ? (
+                  <ul className="snb-react">
+                    <li>
+                      <Link to="react/useState">useState</Link>
+                    </li>
+                  </ul>
+                ) : null}
               </li>
               <li className={sidebar === "redux" ? "on" : null}>
                 <Link
